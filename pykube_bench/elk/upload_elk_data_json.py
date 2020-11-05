@@ -5,7 +5,7 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
 # Specify your parameters here
-FILE_PATH = "pods_data.json"
+FILE_PATH = "template/pods_data.json"
 INDEX = "json_index"
 DOC_TYPE = "json_doc_type"
 
