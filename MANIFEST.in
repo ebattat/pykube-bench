@@ -1,0 +1,4 @@
+include pykube-bench/elk/template/*.json
+
+
+

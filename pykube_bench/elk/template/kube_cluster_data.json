@@ -1,0 +1,67 @@
+{
+    "openshift": "4.6",
+    "node1": {
+        "pod1": {
+            "name": "test1",
+            "os": "linux",
+            "memory": 8,
+            "cpu": 800
+        },
+        "pod2": {
+            "name": "test2",
+            "os": "linux",
+            "memory": 3,
+            "cpu": 300
+        },
+        "pod3": {
+            "name": "test3",
+            "os": "linux",
+            "memory": 2,
+            "cpu": 200
+        },
+        "pod4": {
+            "name": "test4",
+            "os": "linux",
+            "memory": 4,
+            "cpu": 400
+        },
+        "pod5": {
+            "name": "test5",
+            "os": "linux",
+            "memory": 5,
+            "cpu": 500
+        }
+    },
+    "node2": {
+        "pod1": {
+            "name": "test1",
+            "os": "linux",
+            "memory": 5,
+            "cpu": 500
+        },
+        "pod2": {
+            "name": "test2",
+            "os": "linux",
+            "memory": 1,
+            "cpu": 100
+        },
+        "pod3": {
+            "name": "test3",
+            "os": "linux",
+            "memory": 6,
+            "cpu": 600
+        },
+        "pod4": {
+            "name": "test4",
+            "os": "linux",
+            "memory": 5,
+            "cpu": 500
+        },
+        "pod5": {
+            "name": "test5",
+            "os": "linux",
+            "memory": 3,
+            "cpu": 300
+        }
+    }
+}
