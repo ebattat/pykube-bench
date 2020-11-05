@@ -3,7 +3,7 @@ This is a benchmark framework for Kubernetes cluster
 
 **General**
 
-* The pykube-bench package is placed in [Artifactory](TBD)
+* The pykube-bench package is placed in [PyPi](TBD)
 * The pykube-bench pipeline is placed in [Jenkins](TBD)
 * pip install direct from artifactory:
 
