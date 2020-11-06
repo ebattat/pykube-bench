@@ -38,7 +38,7 @@ setup(
 
     ],
 
-    setup_requires=['pytest-runner', 'wheel'],
+    setup_requires=['pytest', 'pytest-runner', 'wheel'],
 
     include_package_data=True,
 
