@@ -1,6 +1,6 @@
 import json
 from datetime import datetime
-# connect to our cluster
+
 from elasticsearch import Elasticsearch
 
 es_host = 'localhost'
