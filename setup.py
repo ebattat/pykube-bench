@@ -31,9 +31,7 @@ setup(
     zip_safe=False,
 
     # Find all packages (__init__.py)
-    #packages=find_packages(include=["py_perf", "py_perf.*"]),
-
-    #packages=['py_perf', 'py_perf.ais', 'py_perf.analyze', 'py_perf.common', 'py_perf.database', 'py_perf.ifm', 'py_perf.ais.linux', ],
+    packages=find_packages(include=['pykube_bench', 'pykube_bench.*']),
 
     install_requires=[
         'typing',
@@ -45,8 +43,5 @@ setup(
 
     include_package_data=True,
 
-    # dependency_links=['http://ilvmactartif01.nice.com/artifactory/api/pypi/pypi-local/simple']
-    #dependency_links=[
-    #    'http://ilvmactartif01.nice.com/artifactory/api/pypi/pypi-virtual/simple/xss-lambdas-common',
-    #]
+    # dependency_links=[]
 )
