@@ -1,0 +1,11 @@
+pytest
+coverage
+pytest-pythonpath
+pytest-html
+mock
+moto
+xlrd
+requests_mock
+typeguard
+wheel
+
