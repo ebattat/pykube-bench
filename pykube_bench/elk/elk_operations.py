@@ -23,7 +23,6 @@ class ELkOperations:
         :param doc_type:
         :return:
         """
-
         # Read data from file
         data = json.loads(open(json_file).read())
         # utcnow - solve timestamp issue
