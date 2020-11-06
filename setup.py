@@ -43,8 +43,6 @@ setup(
 
     include_package_data=True,
 
-    # dependency_links=['http://ilvmactartif01.nice.com/artifactory/api/pypi/pypi-local/simple']
-    #dependency_links=[
-    #    'http://ilvmactartif01.nice.com/artifactory/api/pypi/pypi-virtual/simple/xss-lambdas-common',
-    #]
+    # dependency_links=[]
+
 )
