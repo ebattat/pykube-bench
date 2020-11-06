@@ -12,7 +12,6 @@ if path.isfile(path.join(here, 'README.md')):
 else:
     long_description = ""
 
-
 setup(
     name='pykube-bench',
     version=__version__,
@@ -39,7 +38,7 @@ setup(
 
     ],
 
-    setup_requires=['pytest-runner', 'wheel'],
+    setup_requires=['pytest', 'pytest-runner', 'wheel'],
 
     include_package_data=True,
 
