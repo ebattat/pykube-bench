@@ -31,7 +31,7 @@ setup(
     zip_safe=False,
 
     # Find all packages (__init__.py)
-    #packages=find_packages(include=["py_perf", "py_perf.*"]),
+    packages=find_packages(include=['pykube_bench', 'pykube_bench.*']),
 
     #packages=['py_perf', 'py_perf.ais', 'py_perf.analyze', 'py_perf.common', 'py_perf.database', 'py_perf.ifm', 'py_perf.ais.linux', ],
 
