@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 from datetime import datetime
 
 from elasticsearch import Elasticsearch
@@ -39,6 +40,35 @@ class ELkOperations:
         except Exception:
             raise
 
+    def upload_csv_to_es(self, csv_file, index, doc_type):
+        """
+        This method is upload csv kubernetes cluster data into elasticsearch
+        :param csv_file:
+        :param index:
+        :param doc_type:
+        :return:
+        """
+
+        # Specify your parameters here
+        # csv_file = "filename.csv"
+        # index = "csv_index"
+        # doc_type = "csv_doc_type"
+        header_index = 0
+
+        # Read data from file
+        df = pd.read_csv(csv_file, header=header_index)
+        df["_timestamp"] = datetime.now()
+        data = json.loads(df.to_json(orient='records'))
+        # Upload data to elastic search server
+        try:
+            if isinstance(data, dict):  # JSON Object
+                self.es.index(index=index, doc_type=doc_type, body=data)
+            else:  # JSON Array
+                for record in data:
+                    self.es.index(index=index, doc_type=doc_type, body=record)
+        except Exception:
+            raise
+
     def is_es_index_exist(self, index):
         """
         This method verify that input index exist in elasticsearch
@@ -54,12 +84,12 @@ class ELkOperations:
         except Exception:
             raise
 
-        def delete_index_document(index, document):
-            """
-            This method delete a document id according to index
-            :param index:
-            :param document:
-            :return:
-            """
-            # @todo - convert to python DELETE /json_index/_doc/RGY_mXUBjd1J4k9bu3qX
-            pass
+    def delete_index_document(index, document):
+        """
+        This method delete a document id according to index
+        :param index:
+        :param document:
+        :return:
+        """
+        # @todo - convert to python DELETE /json_index/_doc/RGY_mXUBjd1J4k9bu3qX
+        pass
