@@ -34,7 +34,8 @@ setup(
 
     install_requires=[
         'typing',
-        'elasticsearch'
+        'elasticsearch',
+        'pandas'
 
     ],
 
